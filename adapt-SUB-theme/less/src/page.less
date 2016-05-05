@@ -1,0 +1,58 @@
+// Page styling
+// ============
+
+.page {
+    background-color: @background-color;
+
+    .page-header {
+    	
+        background-color: @white;
+    }
+	
+	.banner-image {
+    	height: 400px;
+    	background-image: url('assets/banner.png');
+    	background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto, 400px;
+    }
+    
+    .page-header-inner {
+        padding: @page-padding-top 0 @page-padding-bottom;
+
+        @media all and (max-width: (@device-width-large + 20px)) {
+            padding: @page-padding-top 20px @page-padding-bottom;
+        }
+
+        @media all and (max-width: (@device-width-small + 20px)) {
+            padding: @page-padding-top 10px @page-padding-bottom;
+        }
+    }
+
+    .page-header-content {
+        max-width: @device-width-large;
+        margin: auto;
+        
+    }
+
+    .page-header-content-inner {
+        text-align: center;
+    }
+
+    .page-title {
+        margin-bottom: @page-title-margin-bottom;
+        color: @primary-color;
+        font-family: @header-font;
+    }
+
+    .page-body {
+        margin-bottom: @page-body-margin-bottom;
+        color: @mid-grey;
+    }
+
+    .page-instruction {
+        margin-bottom: @page-instruction-margin-bottom;
+        .instruction-text;
+        color: @orange;
+    }
+}

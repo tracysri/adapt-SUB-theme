@@ -1,0 +1,44 @@
+// THIS IS WHERE WE CAN DECLARE ANY OTHER VARIABLES (ie. device-width, border-width etc.)
+
+// Device widths
+// =============
+
+@device-width-small: 520px;
+@device-width-medium: 760px;
+@device-width-large: 900px;
+
+// Max-widths
+// ==========
+
+@max-width: 1400px;
+@ie8-max-width: 1024px;
+
+// Borders and Outlines
+// ====================
+
+@focus-outline: 3px solid orange; //focus outline is displayed when accessibility is enabled
+
+@button-border: 0px solid @button-border-color;
+
+@item-border: 3px solid @item-border-color;
+
+@border-radius: 20px;
+
+// Disable Back Button
+// ====================
+
+.navigation .navigation-back-button {
+
+	display: none;
+	
+	}
+
+// Remove rounded edges from trickle button
+// ====================
+
+.trickle-button-component.trickle-full-width .trickle-button-inner.locking button {
+    
+    border-radius: 0px;
+    background-color: @quaternary-color;
+    
+    }

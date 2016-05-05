@@ -1,0 +1,28 @@
+// Navigation styling
+// ==================
+
+.navigation {
+    width: 100%;
+    overflow: hidden;
+    background-color: @navigation-color;
+    background-image: url('assets/SUB-Logo.png');
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400px;
+    height: (@navigation-padding * 2) + @icon-size;
+
+
+    .ie8 & {
+        max-width: @ie8-max-width;
+    }
+
+    .icon {
+        padding: @navigation-padding;
+        color: @navigation-icon-color;
+        .transition-color;
+
+        .no-touch &:hover {
+            color: @navigation-icon-color-hover;
+        }
+    }
+}
